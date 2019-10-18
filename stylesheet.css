@@ -1,0 +1,88 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+#MAINBOX {
+ width: 100%;
+ height: 1000px;
+ margin: 0;
+ padding: 0;
+ background-image: url(../img/shiba.png);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-color: #FFFFFF;
+}
+
+.innerbox {
+ display: table;
+ padding-top: 270px;
+ width: 100%;
+}
+
+.content {
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
+ height: 100%;
+}
+
+.title p {
+ color: #efecec;
+ text-transform: uppercase;
+ font-size: 40px;
+ line-height: 50px;
+ font-weight: 400;
+ margin-top: 20px;
+}
+
+.mozi {
+ margin: 50px auto;
+ font-size: 18px;
+ line-height: 23px;
+ background-color: rgba(255,255,255,0.5);
+;
+ width: 50%;
+ padding: 35px;
+}
+
+@media only screen and (max-width: 999px), print {
+ #MAINBOX {
+   background: none;
+ }
+ .mainimg {
+   width: 100%;
+   position: relative;
+ }
+ .mainimg img {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   overflow: hidden;
+ }
+ .innerbox {
+   padding-top: 0px;
+ }
+ .title {
+   margin-bottom: 20px;
+ }
+ .title p {
+   color: #000000;
+   margin: 0px;
+ }
+ .mozi {
+   margin: 0px auto;
+   top: 50%;
+   left: 50%;
+   transform: translateY(0%) translateX(-50%);
+   position: absolute;
+ }
+}
+
+@media only screen and (min-width: 1000px), print {
+ .mainimg img {
+   display: none;
+ }
+}
